@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap");
+body {
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: white;
+  background-color: #404040;
+}
+
+a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+p {
+  line-height: 1.9;
+}
+.fx-logo {
+  margin-right: 40px;
+}
+.fx-slogan {
+  font-size: 0.8rem;
+}
+
+.navbar-toggler {
+  padding: 7px 16px;
+  border: 0;
+  border-radius: 20;
+  transform: skewX(-15deg);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.navbar-toggler i {
+  transform: skewX(-15deg);
+}
+
+.navbar-expand-lg {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .fx-nav-link {
+  font-size: 1.5rem;
+  font-weight: 450;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.nav-item {
+  margin-right: 60px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item.active .fx-nav-link,
+.nav-item:hover .fx-nav-link {
+  color: #6e6e6e;
+}
+
+.fx-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1000;
+}
+.fx-center {
+  font-family: "VT323", monospace;
+  padding-left: 38%;
+  transform: rotate(-80deg);
+}
+.fx-bg-left,
+.fx-bg-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.fx-bg-right {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fx-bg-left {
+  border-right: 230px solid rgba(0, 0, 0, 0.7);
+  border-top: 100vh solid transparent;
+}
+
+.fx-bg-controls-wrapper {
+  display: inline-block;
+  margin-left: -150px;
+}
+
+.fx-bg-control {
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  background-color: rgba(192, 192, 192, 0.3);
+  margin: 6px;
+  cursor: crosshair;
+}
+
+.fx-bg-control.active,
+.fx-bg-control:hover {
+  background-color: white;
+}
+
+.fx-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fx-row {
+  display: flex;
+}
+
+.fx-col-left {
+  width: 50%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fx-col-right {
+  width: 50%;
+  height: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.fx-content {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 20px;
+  max-width: 660px;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.fx-about {
+  max-width: 525px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.fx-content-title {
+  font-family: "VT323", monospace;
+
+  font-size: 2.5rem;
+}
+hr {
+  margin: 150px;
+  width: 70%;
+  border-top: 2px solid white;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 0;
+}
+
+.btn-big {
+  padding: 9px 40px;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #dbdbdb;
+  color: black;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: #a1d1cf;
+  color: black;
+}
+
+.fx-site-footer {
+  font-family: "VT323", monospace;
+  padding: 40px 0 20px;
+  max-width: 660px;
+  font-size: 0.95rem;
+  margin-right: 200px;
+}
+
+.fx-col-footer {
+  padding-left: 0;
+}
+
+@media (max-width: 1200px) {
+  .nav-item {
+    margin-right: 30px;
+  }
+
+  .fx-page-right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fx-nav {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    top: 44px;
+    right: 4px;
+  }
+
+  .navbar-expand-lg .navbar-nav .fx-nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 13px 20px;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+
+  .nav-item.active .fx-nav-link,
+  .nav-item:hover .fx-nav-link {
+    color: #6e6e6e;
+  }
+
+  .fx-content {
+    margin-top: 20px;
+  }
+  .fx-site-footer {
+    padding-top: 0px;
+    margin-right: 90px;
+  }
+  .fx-col-left {
+    width: 40%;
+  }
+
+  .fx-center {
+    padding-left: 38%;
+    transform: rotate(-10deg);
+    color: #dbdbdb;
+  }
+  .fc-col-right {
+    width: 60%;
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+
+  .fx-col-footer {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .fx-row {
+    flex-direction: column;
+  }
+
+  .fx-col-left,
+  .fx-col-right,
+  .fx-bg-left,
+  .fx-bg-right {
+    width: 100%;
+  }
+
+  #fx-main-nav {
+    position: fixed;
+    top: 50px;
+    right: 40px;
+    padding-bottom: 0;
+  }
+
+  .fx-bg {
+    flex-direction: column;
+  }
+
+  .fx-bg-left {
+    height: 200px;
+    border-bottom: 50px solid rgba(0, 0, 0, 0.7);
+    border-right: 0;
+    border-top: 0;
+  }
+
+  .fx-bg-right {
+    height: calc(100% - 200px);
+  }
+
+  .fx-bg-controls-wrapper {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .fx-content {
+    max-height: none;
+    margin-top: 40px;
+  }
+
+  .fx-col-right {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  .fx-col-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .fx-logo {
+    margin-right: 15px;
+  }
+  .fx-sitename {
+    font-size: 1.8rem;
+  }
+  .fx-slogon {
+    font-size: 0.8rem;
+  }
+}
